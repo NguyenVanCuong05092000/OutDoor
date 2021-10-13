@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTopNav"
+        android:elevation="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStartTopNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.009786" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTopOfTopNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.320875" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glTopOfTopNavTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.375" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnTopNavButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/glStartTopNavButton"
+            app:layout_constraintTop_toBottomOf="@+id/glTopOfTopNavButton"
+            app:srcCompat="@drawable/ic_push_post_delete" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTopNavTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_title_toolbar_select_places"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/glTopOfTopNavTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:paddingVertical="@dimen/_10sdp"-->
+<!--        android:id="@+id/clTab"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/glStart"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/glEnd"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/clTopNav">-->
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/clList"-->
+<!--            android:background="@drawable/bg_btn_places"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            tools:ignore="MissingConstraints">-->
+<!--            <TextView-->
+<!--                android:id="@+id/btnListPlaces"-->
+<!--                android:gravity="center"-->
+<!--                android:paddingHorizontal="@dimen/_5sdp"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:textColor="@color/colorMain"-->
+<!--                android:textSize="@dimen/_12sdp"-->
+<!--                android:text="@string/str_list"/>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imgBtnGoogleMap"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="@+id/clList"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/clList"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:src="@drawable/ic_google_maps"/>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:focusableInTouchMode="true"
+        android:id="@+id/clEdtPlace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_edt_sent_comment"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintTop_toBottomOf="@+id/clTopNav">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_setting_search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edtSearchPlace"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:padding="@dimen/_5sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:background="@null"
+            android:inputType="textFilter"
+            android:imeOptions="actionSearch"
+            android:hint="@string/str_hint_search_location"
+            android:singleLine="true"
+            android:drawableTint="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnSearch"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcPlace"
+        android:background="@color/white"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clEdtPlace" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/lblSearchNoLocation"
+        android:id="@+id/tvNoLocation"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="@+id/rcPlace"
+        app:layout_constraintStart_toStartOf="@+id/glStart"
+        app:layout_constraintEnd_toEndOf="@id/glEnd"/>
+    <brite.outdoor.ui.widgets.CustomImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:src="@drawable/img_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:id="@+id/tvSuggest"
+        android:textSize="@dimen/_11sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:gravity="center"
+        android:text="@string/str_tvSuggest"
+        app:layout_constraintBottom_toBottomOf="@id/btnAdd"
+        app:layout_constraintTop_toTopOf="@id/btnAdd"
+        app:layout_constraintEnd_toStartOf="@id/btnAdd"
+        android:background="@drawable/testrect"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="0dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

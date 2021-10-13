@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorAccent">#162E4D</color>
+    <color name="colorBorder">#707070</color>
+    <color name="clBorderMenu">#E4E4E4</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="colorMain">#F97165</color>
+    <color name="colorSplash">#FFFBF2</color>
+
+    <color name="colorLoginFB">#1A6ED8</color>
+    <color name="colorLoginFBPress">#1760BC</color>
+    <color name="colorLoginGG">#FFFFFF</color>
+    <color name="colorLoginGGPress">#F5F5F5</color>
+
+    <color name="colorRegistration">#F97165</color>
+    <color name="colorViewLine">#EEEEEE</color>
+    <color name="colorBgHome">#F1F1F1</color>
+    <color name="colorSwitchCompat">#D6D6D6</color>
+
+    <color name="colorBgComment">#B7000000</color>
+    <color name="colorBlack2">#2D2D2D</color>
+    <color name="colorBlack3">#D92D2D2D</color>
+    <color name="clTrans">#00FFFFFF</color>
+    <color name="colorDate">#B2B2B2</color>
+    <color name="colorRedPlaceUtensils">#E54D40</color>
+    <color name="colorItemBlur">#72231A1A</color>
+    <color name="colorLightGray">#D3D3D3</color>
+    <color name="colorButtonGreyBg">#444444</color>
+
+</resources>

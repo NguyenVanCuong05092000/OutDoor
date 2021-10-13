@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.camera:camera-lifecycle:1.1.0-alpha07@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/e17da7490ba6376ede0404840ab944bb/jetified-camera-lifecycle-1.1.0-alpha07/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/e17da7490ba6376ede0404840ab944bb/jetified-camera-lifecycle-1.1.0-alpha07/res" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/e17da7490ba6376ede0404840ab944bb/jetified-camera-lifecycle-1.1.0-alpha07/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/modules-2/files-2.1/androidx.camera/camera-lifecycle/1.1.0-alpha07/954fd22a4c69171ccd34089dbc8e0550041de305/camera-lifecycle-1.1.0-alpha07-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

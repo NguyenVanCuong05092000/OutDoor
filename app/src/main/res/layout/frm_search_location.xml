@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+
+        <import type="brite.outdoor.data.entities.ObjectSearch" />
+
+        <variable
+            name="mSearchViewModel"
+            type="brite.outdoor.viewmodel.SearchViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.search.FrmSearchLocation">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glStartFindBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.096" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glEndFindBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.904" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFindBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:background="@drawable/bg_setting_find_box"
+        app:layout_constraintEnd_toEndOf="@id/glEndFindBox"
+        app:layout_constraintStart_toStartOf="@+id/glStartFindBox"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStartContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.03642" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEndContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96358" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btnSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/ic_setting_search"
+            app:layout_constraintBottom_toBottomOf="@+id/search_edit"
+            app:layout_constraintEnd_toEndOf="@+id/glEndContent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--            <androidx.appcompat.widget.AppCompatEditText-->
+        <!--                android:imeOptions="actionSearch"-->
+        <!--                android:id="@+id/search_edit"-->
+        <!--                android:layout_width="0dp"-->
+        <!--                android:layout_height="0dp"-->
+        <!--                android:layout_marginStart="@dimen/_16sdp"-->
+        <!--                android:background="@null"-->
+        <!--                android:singleLine="true"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--                app:layout_constraintEnd_toStartOf="@+id/btnSearch"-->
+        <!--                app:layout_constraintStart_toStartOf="@+id/glStartContent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent" />-->
+        <AutoCompleteTextView
+            android:focusableInTouchMode="true"
+            android:inputType="textFilter"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:id="@+id/search_edit"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnSearch"
+            android:layout_height="@dimen/_40sdp"
+            android:drawablePadding="5dp"
+            android:drawableTint="@android:color/black"
+            android:hint="@string/str_hint_search_location"
+            android:paddingStart="@dimen/_16sdp"
+            android:imeOptions="actionSearch"
+            android:textSize="15sp"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tvDescFindWith"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_21sdp"
+        android:text="@string/lblSearchWithLocateSuffixes"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/glEndFindBox"
+        app:layout_constraintStart_toStartOf="@+id/glStartFindBox"
+        app:layout_constraintTop_toBottomOf="@+id/clFindBox" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearchWith"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_19sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescFindWith" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

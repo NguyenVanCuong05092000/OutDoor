@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_dialog_bottom_item_frmhome_header"
+        app:layout_constraintBottom_toTopOf="@+id/clFooter">
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/tvHideActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/lblHideActivity"
+            android:textColor="@color/colorMain"
+            tools:ignore="MissingConstraints" />
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewLine"
+            app:layout_constraintTop_toBottomOf="@+id/tvHideActivity" />
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/tvEditPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:visibility="gone"
+            android:text="@string/lblEditPost"
+            android:textColor="@color/colorMain"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/tvFollow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/lblFollow"
+            android:textColor="@color/colorMain"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine" />
+
+        <View
+            android:id="@+id/viewLine1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorViewLine"
+            app:layout_constraintTop_toBottomOf="@+id/tvFollow" />
+
+        <TextView
+            android:textSize="@dimen/_14sdp"
+            android:id="@+id/tvBadReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/lblBadReport"
+            android:textColor="@color/colorMain"
+            app:layout_constraintTop_toBottomOf="@+id/viewLine1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bg_dialog_bottom_frmhome_cancel"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:textSize="@dimen/_18sdp"
+            android:textStyle="bold"
+            android:id="@+id/tvCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/_10sdp"
+            android:text="@string/str_cancel_bottomsheet"
+            android:textColor="@color/colorLoginFB"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

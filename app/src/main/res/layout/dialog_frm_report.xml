@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_frm_report">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glStart"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.03" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.97" />
+            <brite.outdoor.ui.widgets.CustomImageButton
+                android:id="@+id/imgBack"
+                android:paddingStart="@dimen/_6sdp"
+                android:layout_width="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/glStart"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_left"
+                app:layout_constraintTop_toTopOf="@id/tvTitle"
+                app:layout_constraintBottom_toBottomOf="@id/tvTitle"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <TextView
+                android:textColor="@color/colorMain"
+                android:gravity="center"
+                android:paddingStart="@dimen/_15sdp"
+                android:id="@+id/tvTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_20sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="@string/str_title_frm_report"
+                android:textSize="@dimen/_14sdp"
+                app:layout_constraintEnd_toStartOf="@id/glEnd"
+                app:layout_constraintStart_toEndOf="@id/glStart"
+                tools:ignore="MissingConstraints,RtlSymmetry" />
+
+            <View
+                android:id="@+id/viewLine"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/colorViewLine"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/_6sdp"
+                android:paddingStart="@dimen/_6sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toStartOf="@id/glEnd"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/glStart"
+                app:layout_constraintTop_toBottomOf="@id/viewLine" />
+
+            <TextView
+                android:id="@+id/tvLearnMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/_20sdp"
+                android:paddingStart="@dimen/_6sdp"
+                android:paddingTop="@dimen/_6sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:text="@string/str_lear_more_frm_report"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintEnd_toStartOf="@id/glEnd"
+                app:layout_constraintStart_toEndOf="@id/glStart"
+                app:layout_constraintTop_toBottomOf="@id/rcView"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

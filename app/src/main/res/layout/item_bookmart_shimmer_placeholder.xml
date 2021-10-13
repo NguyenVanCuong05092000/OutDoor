@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@color/white"
+        android:elevation="3dp">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            app:cardElevation="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tool:ignore="MissingConstraints">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStatImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.032" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEndContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.968" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glEndImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.4853" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/glStartContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.51466" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/clImgPost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardCornerRadius="10dp"
+                    android:background="@color/colorDate"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/glEndImage"
+                    app:layout_constraintStart_toStartOf="@+id/glStatImage"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:background="@color/colorDate"
+                        android:id="@+id/imgPost"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clInformation"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/glStartContent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvTitlePost"
+                        style="@style/fontSegoBold"
+                        android:includeFontPadding="false"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorDate"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:minLines="2"
+                        android:textColor="@color/black"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imgLocation"
+                        app:layout_constraintTop_toTopOf="parent" />
+                    <ImageView
+                        android:id="@+id/imgLocation"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="@dimen/_10sdp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvTitlePost" />
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:textColor="@color/colorDate"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:background="@color/colorDate"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitlePost"
+                        />
+
+                    <TextView
+                        android:id="@+id/tvBy"
+                        android:background="@color/colorDate"
+                        android:includeFontPadding="false"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="@string/lblBy"
+                        android:textColor="@color/colorDate"
+                        app:layout_constraintStart_toEndOf="@+id/tvDate"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitlePost" />
+
+                    <TextView
+                        android:id="@+id/tvNamePostedBy"
+                        android:layout_width="0dp"
+                        android:includeFontPadding="false"
+                        style="@style/fontSegoBold"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:background="@color/colorDate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/tvBy"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitlePost" />
+
+                    <brite.outdoor.ui.widgets.CustomImageButton
+                        android:id="@+id/btnUnBookMark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorDate"
+                        app:layout_constraintEnd_toStartOf="@+id/btnShare"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+                    <brite.outdoor.ui.widgets.CustomImageButton
+                        android:id="@+id/btnShare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorDate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnUnBookMark"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDate" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <View
+            android:background="@color/colorWhite"
+            android:id="@+id/viewFooter"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_50sdp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

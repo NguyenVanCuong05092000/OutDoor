@@ -1,0 +1,247 @@
+<resources>
+    <string name="app_name">OutDoor</string>
+    <string name="lblOK">OK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="lblLoginFacebook">ĐĂNG NHẬP VỚI FACEBOOK</string>
+    <string name="lblLoginGoogle">ĐĂNG NHẬP VỚI GOOGLE</string>
+    <string name="lblRegistration"><u>Đăng ký</u></string>
+
+    //text intro
+    <string name="lblTextIntro1">Hãy cùng cho trẻ ra ngoài trải nghiệm thiên nhiên , làm quen với các kỹ năng mềm và nâng cao sức khỏe</string>
+    <string name="lblTextIntro2">Bạn có thể đăng những bài viết có cả những bức ảnh kể về địa điểm vui chơi ngoài trời mà mình đã đến hoặc kể về dụng cụ mình đã sử dụng cho chuyến dã ngoại</string>
+    <string name="lblTextIntro3">Bạn có thể tìm kiếm những địa điểm vui chơi ngoài trời gần mình hoặc khắp nước Việt Nam xinh đẹp này </string>
+    <string name="lblTextIntro4">Bạn có thể lưu bài viết , giao lưu kết bạn bằng cách bấm theo dõi các phụ huynh khác cũng như thả tim hoặc bình luận bài viết</string>
+    <string name="lblTextIntro5">Với mong muốn con phát triển toàn diện về Thể Chất và Tinh thần - các bậc phụ huynh hãy cùng chúng tôi chia sẻ và trải nghiệm</string>
+    // home
+    <string name="lblBy">đăng bởi</string>
+    <string name="lblFocus">Tiêu điểm</string>
+    <string name="lblFollow">Theo dõi</string>
+    <string name="lblUnFollow">Bỏ theo dõi</string>
+    <string name="lblNews">Tin mới</string>
+    //mypage
+    <string name="lblYourWriting">BÀI VIẾT CỦA BẠN</string>
+    <string name="lblArticlesSave">BÀI VIẾT ĐÃ LƯU</string>
+    <string name="lblFollowing">Đang theo dõi</string>
+
+    <string name="lblShare">Chia sẻ</string>
+    <string name="lblLike">Thích</string>
+
+    <string name="lblUnSave">Bỏ lưu</string>
+    <string name="lblShareToFacebook">Chia sẻ lên Facebook</string>
+    <string name="lblHintEdtShare">Nói gì đó về điều này…</string>
+    <string name="lblShare2">CHIA SẺ</string>
+    <string name="lblReply">Trả lời</string>
+    <string name="lblCommentVn">Bình luận</string>
+    <string name="lblAddComment">Thêm bình luận…</string>
+
+    //bottom sheet
+    <string name="lalDeleteActivity">Xoá bài viết</string>
+    <string name="lblHideActivity">Ẩn bài viết</string>
+    <string name="lblDeleteActivity">Xoá bài viết</string>
+    <string name="lblBadReport">Báo xấu</string>
+    <string name="lblEditPost">Sửa bài viết</string>
+    <string name="str_cancel_bottomsheet">Hủy</string>
+
+    //search
+    <string name="lblTitleSearch">Tìm Kiếm</string>
+    <string name="str_hint_search_location">Tìm địa điểm</string>
+    <string name="str_hint_search_utensil">Tìm dụng cụ</string>
+    <string name="str_hint_search_friend">Tìm bạn bè</string>
+    <string name="lblSearchWithLocateSuffixes"> Kết quả tìm kiếm cho \"Địa điểm\"</string>
+    <string name="lblSearchWithToolSuffixes">Kết quả tìm kiếm cho \"Dụng cụ\"</string>
+    <string name="lblSearchWithUserSuffixes">Kết quả tìm kiếm cho \"Bạn bè\"</string>
+    <string name="lb_unfollow_search">Bỏ theo dõi</string>
+    <string name="lb_follow_search">Theo dõi</string>
+
+    //select location and utensil
+    <string name="str_title_toolbar_select_places">THÊM ĐỊA ĐIỂM</string>
+    <string name="str_title_toolbar_select_utensils">THÊM DỤNG CỤ</string>
+    <string name="lblSearchNoLocation">Không tìm thấy địa điểm của bạn.\nVui lòng tìm kiếm trên bản đồ!</string>
+    <string name="lbSearchNoUtensil">Không tìm thấy dụng cụ</string>
+
+    //frmMap
+    <string name="lblNoPlace">Tên địa điểm chưa đúng? Vui lòng sửa lại.</string>
+
+    //push post
+    <string name="str_hint_title_post_frm_push_post">Tiêu đề bài viết</string>
+    <string name="str_toolbar_frm_push_post">Tạo bài viết</string>
+    <string name="str_post_frm_push_post">Đăng</string>
+    <string name="str_you_create_title">Bạn cần tạo tiêu đề</string>
+    <string name="str_create_title"> tiêu đề</string>
+    <string name="str_you_create_content">Bạn chưa nhâp nội dung bài viết</string>
+    <string name="str_create_content"> và nội dung bài viết</string>
+    <string name="str_hint_content_item_push_post">Nội dung bài viết</string>
+    <string name="str_add_image_item_push_post">Thêm ảnh / video</string>
+    <string name="str_total_media_selected">Số lượng ảnh và video tối đa có thể chọn: 10</string>
+    <string name="str_total_image_selected">Số lượng ảnh đã chọn: </string>
+    <string name="str_total_video_selected">Số lượng video đã chọn: </string>
+    <string name="str_total_result">Tổng: </string>
+    <string name="str_place"><u><font color='#F97165'>Thêm địa điểm</font></u></string>
+    <string name="str_tools"><u><font color='#F97165'>Thêm dụng cụ</font></u></string>
+
+    //setting
+    <string name="lblSetting">CÀI ĐẶT</string>
+    <string name="lblChangePosition">Thay đổi vị trí</string>
+    <string name="lblGetNotification">Thông báo</string>
+    <string name="lbPolicy">Chính sách</string>
+    <string name="lbTerm">Điều khoản</string>
+    <string name="lbReportViolation">Báo cáo vi phạm</string>
+    <string name="lblExit">Đăng xuất</string>
+    <string name="lbTranslation">Ngôn ngữ</string>
+    <string name="msgConfirmLogout">Bạn có muốn đăng xuất không?</string>
+
+    <string name="google_client_id">150220538570-ri9h59obm0e4tovgghou85i6n3rus6hg.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">584926965803734</string>
+    <string name="fb_login_protocol_scheme">fb584926965803734</string>
+    <string name="lblHintContentIntroduce">Nội dung giới thiệu</string>
+    <string name="lblAddPlace">Thêm địa điểm</string>
+    <string name="lblCancel">Hủy bỏ</string>
+    <string name="lblSaveCache">Lưu tạm</string>
+    <string name="lblPushPost">Đăng bài</string>
+    <string name="lblOver">Xong</string>
+    <string name="lblYes">Có</string>
+    <string name="lblNo">Không</string>
+    <string name="default_notification_channel_id">OutDoor</string>
+    <string name="lblSkip">SKIP</string>
+    <string name="msgNotificationTurnOn">Vui lòng thay đổi cài đặt thông báo trong cài đặt thiết bị đầu cuối.</string>
+    <string name="lblNavSetting">Cài đặt</string>
+    <string name="lblDeny">Bỏ qua</string>
+    <string name="titleConfirm">Xác nhận</string>
+    <string name="msgConfirmExitPost">Bạn có muốn lưu trữ bài viết trước khi thoát không?</string>
+    <string name="lbClose">Đóng</string>
+    <string name="lbOke_dialog_exit">Đồng ý</string>
+
+    <string name="msgConfirmResetPost">Bạn có muốn tiếp tục chỉnh sửa bài viết không?</string>
+    <string name="msgConfirmGoToScreenMain">Bạn có muốn quay trở lại màn chính không?</string>
+    <string name="msgConfirmChangeLocation">Bạn có muốn thay đổi địa điểm hiện tại không?</string>
+    <string name="msgConfirmChangeUtensils">Bạn có muốn thay đổi dụng cụ hiện tại không?</string>
+    <string name="msgConfirmChangeAvatar">Bạn có muốn thay đổi avatar hiện tại không?</string>
+    <string name="msgConfirmExit">Bạn có muốn thoát không?</string>
+    <string name="msgConfirmExitAvatar">Ảnh đại diện là bắt buộc\nBạn có muốn huỷ đăng bài không?</string>
+
+    <string name="msgConfirmDeletePost">Bạn muốn xóa bài viết không?</string>
+
+    <string name="no_internet_connection">Thiết bị của bạn đang mất kết nối hoặc không thể truy cập internet. Vui lòng kiểm tra lại.</string>
+    <string name="str_no_internet_retry">Thử lại</string>
+    <string name="msgConfirmExitUnbook">Bạn có muốn hủy bài viết đã lưu không?</string>
+
+    <string name="str_title_frm_report">Nội dung báo cáo</string>
+    <string name="str_header_frm_report">Giúp chúng tôi vấn đề. Điều gì đang xảy ra với Outdoor này?</string>
+    <string name="str_content1_frm_report">Tôi không quan tâm tới bài viết này</string>
+    <string name="str_content2_frm_report">Nội dung bài viết đáng nghi ngờ hoặc không hữu ích</string>
+    <string name="str_content3_frm_report">Có chứa ảnh hoặc video có nội dung nhạy cảm</string>
+    <string name="str_content4_frm_report">Nội dung không tốt hoặc gây hại cho người đọc</string>
+    <string name="str_content5_frm_report">Nội dung bài viết nói về việc tự làm hại bản thân hoặc tự sát</string>
+    <string name="str_lear_more_frm_report"><font color='#C120B6FA'>Tìm hiểu thêm</font> về việc báo cáo vi phạm các quy tắc của chúng tôi </string>
+
+    <string name="str_like_count"> lượt thích</string>
+    <string name="str_comment_count"> bình luận</string>
+    <string name="str_share_count"> chia sẻ</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_frm_detail_comment">Bình luận</string>
+    <string name="str_frm_detail_share">Chia sẻ</string>
+    <string name="str_frm_detail_like">Thích</string>
+
+
+
+    <string name="str_day_item_news">ngày</string>
+    <string name="str_hours_item_news">giờ</string>
+    <string name="str_minutes_item_news">phút</string>
+    <string name="str_seconds_item_news">giây</string>
+
+    <string name="str_delete_post">Xóa bài đăng thành công!</string>
+    <string name="str_hide_post">Ẩn bài đăng thành công!</string>
+    <string name="str_report_post">Cảm ơn bạn đã cho chúng tôi biết.\nNếu chúng tôi phát hiện rằng tài khoản này vi phạm điều khoản sử dụng của Outdoor, chúng tôi sẽ thực hiện hành động tương thích đối với tài khoản đó.</string>
+
+    <string name="str_hint_search_view">Tìm kiếm</string>
+    <string name="str_save_post_success">Bạn đã lưu thành công!</string>
+
+    <string name="str_no_memory_assess">Không có quyền truy cập bộ nhớ!</string>
+    <string name="str_un_bookmark">Đã xóa dấu trang thành công!</string>
+
+    <string name="str_follow">Bạn đã theo dõi</string>
+    <string name="str_un_follow">Bạn đã bỏ theo dõi</string>
+
+
+    <string name="str_list">Danh sách</string>
+    <string name="str_choose_place">Chọn địa điểm</string>
+    <string name="str_title_toolbar_listpostlocation">BÀI ĐĂNG</string>
+
+    <string name="str_month1">Tháng 1</string>
+    <string name="str_month2">Tháng 2</string>
+    <string name="str_month3">Tháng 3</string>
+    <string name="str_month4">Tháng 4</string>
+    <string name="str_month5">Tháng 5</string>
+    <string name="str_month6">Tháng 6</string>
+    <string name="str_month7">Tháng 7</string>
+    <string name="str_month8">Tháng 8</string>
+    <string name="str_month9">Tháng 9</string>
+    <string name="str_month10">Tháng 10</string>
+    <string name="str_month11">Tháng 11</string>
+    <string name="str_month12">Tháng 12</string>
+    <string name="lblSeeMore">Xem thêm</string>
+    <string name="lblSeeMoreComment">Xem thêm nhiều bình luận</string>
+
+    <string name="str_sharefb_success">Bạn chia sẻ bài viết thành công!</string>
+    <string name="str_sharefb_error">Bạn chia sẻ bài viết thất bại!</string>
+    <string name="lblDelete">Xóa</string>
+    <string name="lblFollowers">Người theo dõi</string>
+    <string name="msgConfirmDeleteComment">Bạn có muốn xóa bình luận không?</string>
+
+    <string name="msgConfirmChooseImage">Vui lòng chọn ảnh trước khi đăng bài?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str_popup_location">Địa điểm</string>
+    <string name="str_popup_utensils">Dụng cụ</string>
+    <string name="str_hint_described">Mô tả</string>
+    <string name="lblSending">Đang gửi…</string>
+
+    <string name="str_title_toolbar_select_image">Chọn ảnh</string>
+
+    <string name="msgPostNoLongerExists">Không có dữ liêu</string>
+    <string name="titlePostNoLongerExists">Lỗi</string>
+
+    <string name="lbl_privacy_policy">chính sách bảo mật của chúng tôi</string>
+
+    // notification
+    <string name="str_title_toolbar_notification">THÔNG BÁO</string>
+    <string name="str_notification_comment"><font color='#323131'>đã trả lời bình luận của bạn</font></string>
+    <string name="str_notification_follow"><font color='#323131'>đã theo dõi bạn</font></string>
+    <string name="str_notification_new_post"><font color='#323131'>đã đăng bài viết mới</font></string>
+
+    <string name="lblStartPolicy">Bằng cách tiếp tục, bạn đồng ý với</string>
+    <string name="lblTOS">điều khoản sử dụng</string>
+    <string name="lblAnd">và</string>
+    <string name="str_hint_name_location">Tên địa điểm</string>
+    <string name="lblAgree">Đồng ý</string>
+    <string name="msgDeleteComment">Xóa bình luận</string>
+    <string name="msgDeletePost">Xóa bài viết</string>
+
+    <string name="str_language_vietnam">Tiếng Việt</string>
+    <string name="str_language_english">Tiếng Anh</string>
+
+    //title frmListPeopleInteractive
+    <string name="str_title_frmListPeople_follow">ĐANG THEO DÕI</string>
+    <string name="str_title_frmListPeople_followers">NGƯỜI THEO DÕI</string>
+    <string name="str_tile_frmListPeople_likes">LƯỢT THÍCH</string>
+
+    <string name="str_tvSuggest">Tên địa điểm chưa đúng? Vui lòng sửa lại.</string>
+
+
+    <string name="str_close">Đóng</string>
+
+    <string name="message_no_permissions">The app cannot work without permissions</string>
+    <string name="label_ok">OK</string>
+
+
+    <string name="message_push_post_error">Bài viết vượt quá số lượng Media cho phép.</string>
+    <string name="lblEditSuccess">Bài viết đã cập nhật!</string>
+    <string name="lblPostSuccess">Đăng bài viết thành công!</string>
+
+    // dialog
+    <string name="str_close_dialog_notify">Đóng</string>
+</resources>

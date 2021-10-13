@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CollapsingImageBehavior">
+        <attr name="collapsedTarget" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="LayoutImagePickedPreview">
+        <attr name="canChange" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="frameCount" format="integer"/>
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SwipeToHideLayout">
+        <attr name="direction" format="enum">
+            <enum name="left" value="1" />
+            <enum name="top" value="2" />
+            <enum name="right" value="3" />
+            <enum name="bottom" value="4" />
+        </attr>
+        <attr name="enabled" format="boolean" />
+    </declare-styleable>
+</resources>

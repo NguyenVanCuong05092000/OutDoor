@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/rootView"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clHeaderComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/clHeaderComment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/clComment">
+        <TextView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/lblCommentVn"
+            android:id="@+id/tvTitleComment"/>
+
+        <brite.outdoor.ui.widgets.CustomImageButton
+            android:id="@+id/btnClose"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_close_gray"/>
+        <View
+            android:id="@+id/viewFooter"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleComment"
+            app:layout_constraintBottom_toTopOf="@+id/clSendComment"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/rcComment"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSendComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgAvatarComment"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/clEdtSendComment"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/clEdtSendComment" />-->
+            <ImageView
+                android:id="@+id/btnImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:src="@drawable/add_image"
+                app:layout_constraintBottom_toBottomOf="@+id/clEdtSendComment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/clEdtSendComment"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEdtSendComment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:background="@drawable/bg_edt_sent_comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnImage"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clImageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add"
+                        tools:ignore="MissingConstraints" />
+
+                    <brite.outdoor.ui.widgets.CustomImageButton
+                        android:id="@+id/btnCloseImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:src="@drawable/ic_close_gray"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <EditText
+                    android:id="@+id/edtSendComment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/lblAddComment"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSend"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/clImageView" />
+
+                <ImageView
+                    android:id="@+id/btnSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/ic_sent"
+                    app:layout_constraintBottom_toBottomOf="@id/clEdtSendComment"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/clEdtSendComment" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/clHeaderComment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/clCommentReply"
+        android:animateLayoutChanges="true"
+        android:visibility="gone">
+
+        <brite.outdoor.ui.widgets.CustomImageButton
+            android:id="@+id/icBackReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"
+            app:layout_constraintBottom_toBottomOf="@+id/tvTitleCommentReply"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvTitleCommentReply" />
+
+
+        <TextView
+            android:id="@+id/tvTitleCommentReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/lblCommentVn"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <brite.outdoor.ui.widgets.CustomImageButton
+            android:id="@+id/btnCloseReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:src="@drawable/ic_close_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcCommentReply"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSeeMoreComment"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitleCommentReply" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/btnSeeMoreComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/clSendCommentReply"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp">
+            <ImageView
+                app:layout_constraintEnd_toEndOf="parent"
+                android:id="@+id/imgIcArrowDownComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tvSeeMoreComment"
+                app:layout_constraintBottom_toBottomOf="@+id/tvSeeMoreComment"
+                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+            <TextView
+                android:id="@+id/tvSeeMoreComment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:text="@string/lblSeeMoreComment"
+                android:textColor="@color/colorDate"
+                app:layout_constraintEnd_toStartOf="@+id/imgIcArrowDownComment"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/clSendCommentReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+<!--            <ImageView-->
+<!--                android:id="@+id/imgAvatarCommentReply"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_10sdp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintBottom_toBottomOf="@+id/clEdtSendCommentReply"-->
+<!--                app:layout_constraintTop_toTopOf="@+id/clEdtSendCommentReply" />-->
+            <ImageView
+                android:id="@+id/btnImageReply"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/clEdtSendCommentReply"
+                app:layout_constraintTop_toTopOf="@+id/clEdtSendCommentReply"
+                android:src="@drawable/add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clEdtSendCommentReply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_5sdp"
+                android:background="@drawable/bg_edt_sent_comment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnImageReply"
+                app:layout_constraintTop_toTopOf="parent">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="gone"
+                    android:id="@+id/clImageViewReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:ignore="MissingConstraints">
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_add"
+                        android:id="@+id/imgViewReply"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:ignore="MissingConstraints" />
+                    <brite.outdoor.ui.widgets.CustomImageButton
+                        android:id="@+id/btnCloseImageReply"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:src="@drawable/ic_close_gray"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <EditText
+                    android:id="@+id/edtSendCommentReply"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/lblReply"
+                    android:padding="@dimen/_5sdp"
+                    android:textSize="@dimen/_12sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btnSendReply"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/clImageViewReply" />
+                <ImageView
+                    android:id="@+id/btnSendReply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/ic_sent"
+                    app:layout_constraintTop_toTopOf="@id/clEdtSendCommentReply"
+                    app:layout_constraintBottom_toBottomOf="@id/clEdtSendCommentReply"
+                    app:layout_constraintEnd_toEndOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <brite.outdoor.ui.widgets.SwipeToHideLayout
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        app:direction="bottom">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.032" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.968" />
+            <View
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/closeRcViewImage"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/colorDate"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_3sdp"
+                tools:ignore="MissingConstraints" />
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintEnd_toEndOf="@id/glEnd"
+                app:layout_constraintStart_toStartOf="@id/glStart"
+                app:layout_constraintTop_toBottomOf="@id/closeRcViewImage"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:longClickable="true"
+                android:id="@+id/rcViewImage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <brite.outdoor.ui.widgets.ProgressView
+                android:id="@+id/progressLoadMediaComment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:src="@drawable/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </brite.outdoor.ui.widgets.SwipeToHideLayout>
+
+    <brite.outdoor.ui.widgets.SwipeToHideLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:id="@+id/layout_bottomReply"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        app:direction="bottom">
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glStartReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.032" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glEndReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.968" />
+            <View
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/closeRcViewImageReply"
+                android:layout_gravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@color/colorDate"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_3sdp"
+                tools:ignore="MissingConstraints" />
+            <androidx.recyclerview.widget.RecyclerView
+                app:layout_constraintEnd_toEndOf="@id/glEndReply"
+                app:layout_constraintStart_toStartOf="@id/glStartReply"
+                app:layout_constraintTop_toBottomOf="@id/closeRcViewImageReply"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                android:longClickable="true"
+                android:layout_gravity="top"
+                android:id="@+id/rcViewImageReply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                tools:ignore="NotSibling" />
+            <brite.outdoor.ui.widgets.ProgressView
+                android:id="@+id/progressLoadMediaReply"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:src="@drawable/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </brite.outdoor.ui.widgets.SwipeToHideLayout>
+
+</LinearLayout>

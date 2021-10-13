@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.FrmIntro">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vpIntroduction"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clTextIntro"
+        android:background="@drawable/bg_cl_text_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:id="@+id/tvIntro"
+            android:textSize="@dimen/_15sdp"
+            android:text="Hãy cùng cho trẻ ra ngoài trải nghiệm Thiên nhiên , làm quen với các kỹ năng mềm và nâng cao sức khỏe "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintBottom_toTopOf="@+id/icPageIndicatorView"
+            />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/icPageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:piv_animationType="scale"
+            app:piv_dynamicCount="true"
+            app:piv_interactiveAnimation="true"
+            app:piv_radius="5dp"
+            app:piv_selectedColor="@color/white"
+            app:piv_unselectedColor="@color/colorWhite"
+            app:piv_viewPager="@id/vpIntroduction" />
+
+        <TextView
+            android:id="@+id/tvSkip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSkip"
+            app:layout_constraintBottom_toBottomOf="@+id/icPageIndicatorView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintTop_toTopOf="@+id/icPageIndicatorView"
+            android:layout_marginEnd="@dimen/_10sdp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

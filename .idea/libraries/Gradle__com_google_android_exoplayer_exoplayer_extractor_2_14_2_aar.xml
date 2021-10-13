@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.exoplayer:exoplayer-extractor:2.14.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/c24e0336be40775ed4cb6ba5b3838d47/jetified-exoplayer-extractor-2.14.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/c24e0336be40775ed4cb6ba5b3838d47/jetified-exoplayer-extractor-2.14.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/c24e0336be40775ed4cb6ba5b3838d47/jetified-exoplayer-extractor-2.14.2/res" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/c24e0336be40775ed4cb6ba5b3838d47/jetified-exoplayer-extractor-2.14.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/modules-2/files-2.1/com.google.android.exoplayer/exoplayer-extractor/2.14.2/2638a5cd59963490de883a287bc0ba062a473ef1/exoplayer-extractor-2.14.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,27 @@
+[
+	{
+		"id":1,
+		"content":"Tôi không quan tâm tới bài viết này",
+		"cIndex":1
+	},
+	{
+		"id":2,
+		"content":"Nội dung bài viết đáng nghi ngờ hoặc không hữu ích",
+		"cIndex":2
+	},
+	{
+		"id":3,
+		"content":"Có chứa ảnh hoặc video có nội dung nhạy cảm",
+		"cIndex":3
+	},
+	{
+		"id":4,
+		"content":"Nội dung không tốt hoặc gây hại cho người đọc",
+		"cIndex":4
+	},
+	{
+		"id":5,
+		"content":"Nội dung bài viết nói về việc tự làm hại bản thân hoặc tự sát",
+		"cIndex":5
+	}
+]

@@ -1,0 +1,27 @@
+[
+	{
+		"id":1,
+		"content":"I'm not interested in this post",
+		"cIndex":1
+	},
+	{
+		"id":2,
+		"content":"Content of post is questionable or unhelpful",
+		"cIndex":2
+	},
+	{
+		"id":3,
+		"content":"Content of post contains photos or videos with sensitive",
+		"cIndex":3
+	},
+	{
+		"id":4,
+		"content":"Content of post is not good or harmful to the reader",
+		"cIndex":4
+	},
+	{
+		"id":5,
+		"content":"Content of post is about self-harm or suicide",
+		"cIndex":5
+	}
+]

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout android:layout_width="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:orientation="vertical"
+    android:layout_height="0dp"
+    android:gravity="center"
+    android:id="@+id/btnFollow"
+    tools:ignore="MissingConstraints">
+
+    <TextView
+        android:gravity="center"
+        android:background="@color/colorDate"
+        android:id="@+id/tvNumberFollow"
+        style="@style/stMyPageH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorDate"
+        android:id="@+id/tvNumberFollowDes"
+        style="@style/stMyPageH1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFollowers"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:background="@color/colorDate"
+            android:id="@+id/tvNumberFollowers"
+            style="@style/stMyPageH1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:background="@color/colorDate"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tvNumberFollowersDes"
+            style="@style/stMyPageH1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/btnLike"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_gravity="center"
+            android:background="@color/colorDate"
+            android:id="@+id/tvNumberLike"
+            style="@style/stMyPageH1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@color/colorDate"
+            android:id="@+id/imgNumberLike"
+            style="@style/stMyPageH1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

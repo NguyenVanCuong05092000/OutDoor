@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlContent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/rlRoot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:background="@drawable/bg_dialog_save_push_post">
+
+        <TextView
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/colorBlack2"
+            android:id="@+id/tvTitle"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+        <TextView
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/colorBlack3"
+            android:id="@+id/tvConfirm"
+            app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+            android:gravity="center"
+            />
+
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:textSize="@dimen/_13sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_btn_follow"
+            android:id="@+id/btnOk"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tvConfirm"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:gravity="center"
+            android:text="@string/lblOK"/>
+        <View
+            android:layout_marginTop="@dimen/_20sdp"
+            android:id="@+id/viewFooter"
+            app:layout_constraintTop_toBottomOf="@id/btnOk"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

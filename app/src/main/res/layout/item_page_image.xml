@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBlack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:gravity="center"
+                android:id="@+id/clPlayVideo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingConstraints">
+            <com.google.android.exoplayer2.ui.PlayerView
+                app:resize_mode="fixed_width"
+                app:fastforward_increment="10000"
+                app:rewind_increment="10000"
+                app:controller_layout_id="@layout/exo_player_control_view"
+                app:show_timeout="0"
+                app:hide_on_touch="false"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="center"
+                android:id="@+id/playerView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_250sdp" />
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:id="@+id/playerViewFullScreen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:id="@+id/progress"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:visibility="gone"
+                android:layout_centerInParent="true"
+                android:src="@drawable/ic_loading_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

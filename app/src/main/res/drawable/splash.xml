@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item >
+            <color android:color="@color/colorSplash"/>
+    </item>
+    <item android:gravity="center" >
+        <bitmap android:src="@drawable/logo_app_splash"
+            android:gravity="clip_horizontal"/>
+    </item>
+</layer-list>

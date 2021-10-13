@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">OutDoor</string>
+    <string name="lblOK">OK</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="lblLoginFacebook">LOGIN WITH FACEBOOK</string>
+    <string name="lblLoginGoogle">LOGIN WITH GOOGLE</string>
+    <string name="lblRegistration"><u>Register</u></string>
+
+    //text intro
+    <string name="lblTextIntro1">Let is take children out to experience Nature, get acquainted with soft skills and improve health</string>
+    <string name="lblTextIntro2">You can post reviews of outdoor places you have been to with Photos and Text or even the Tools you have used.</string>
+    <string name="lblTextIntro3">You can search for places to play in nature near you or throughout this beautiful Vietnam</string>
+    <string name="lblTextIntro4">You can Save the article, make friends by clicking Follow other Parents as well as Drop a Heart or Comment the article.</string>
+    <string name="lblTextIntro5">With the desire for children to develop comprehensively physically and mentally - parents, please share and experience with us</string>
+
+    //home
+    <string name="lblBy">By</string>
+    <string name="lblFocus">Highlight</string>
+    <string name="lblFollow">Follow</string>
+    <string name="lblUnFollow">UnFollow</string>
+    <string name="lblNews">News</string>
+
+
+    // mypage
+    <string name="lblYourWriting">YOUR POST</string>
+    <string name="lblArticlesSave">BOOKMARK</string>
+    <string name="lblFollowing">Following</string>
+
+    <string name="lblShare">Share</string>
+    <string name="lblLike">Like</string>
+
+    <string name="lblUnSave">UnSave</string>
+    <string name="lblShareToFacebook">Share to Facebook</string>
+    <string name="lblHintEdtShare">Say something about this…</string>
+    <string name="lblShare2">SHARE</string>
+    <string name="lblReply">Reply</string>
+    <string name="lblCommentVn">Comment</string>
+    <string name="lblAddComment">Add comment…</string>
+
+    //bottom sheet
+    <string name="lalDeleteActivity">Remove this post</string>
+    <string name="lblHideActivity">Hide this post</string>
+    <string name="lblDeleteActivity">Remove this post</string>
+    <string name="lblBadReport">Report</string>
+    <string name="lblEditPost">Edit post</string>
+    <string name="str_cancel_bottomsheet">Cancel</string>
+
+
+    //search
+    <string name="lblTitleSearch">SEARCH</string>
+    <string name="str_hint_search_location">Search location</string>
+    <string name="str_hint_search_utensil">Search utensil</string>
+    <string name="str_hint_search_friend">Search friend</string>
+    <string name="lblSearchWithLocateSuffixes"> Search results for \"Location\"</string>
+    <string name="lblSearchWithToolSuffixes">Search results for \"Utensil\"</string>
+    <string name="lblSearchWithUserSuffixes">Search results for \"Friend\"</string>
+    <string name="lb_unfollow_search">Unfollow</string>
+    <string name="lb_follow_search">Follow</string>
+
+
+    //select location and utensil
+    <string name="str_title_toolbar_select_places">ADD LOCATION</string>
+    <string name="str_title_toolbar_select_utensils">ADD UTENSIL</string>
+    <string name="lblSearchNoLocation">Your location could not be found.\nPlease search on the map</string>
+    <string name="lbSearchNoUtensil">Utensil not found</string>
+
+    //frmMap
+    <string name="lblNoPlace">Is name of location incorrect? Please correct.</string>
+
+    //push post
+    <string name="str_hint_title_post_frm_push_post">Post title</string>
+    <string name="str_toolbar_frm_push_post">Create post</string>
+    <string name="str_post_frm_push_post">Post</string>
+    <string name="str_you_create_title">You need to create a title</string>
+    <string name="str_create_title">Title</string>
+    <string name="str_you_create_content">You must enter the post content</string>
+    <string name="str_create_content"> and article content</string>
+    <string name="str_hint_content_item_push_post">Post content</string>
+    <string name="str_add_image_item_push_post">Add image / video</string>
+    <string name="str_total_media_selected">Maximum number of photos and videos that can be selected: 10</string>
+    <string name="str_total_image_selected">Number of videos selected: </string>
+    <string name="str_total_video_selected">Number of photos selected: </string>
+    <string name="str_total_result">Result: </string>
+    <string name="str_place"><u><font color='#F97165'>Add location</font></u></string>
+    <string name="str_tools"><u><font color='#F97165'>Add utensil</font></u></string>
+
+    //setting
+    <string name="lblSetting">SETTING</string>
+    <string name="lblChangePosition">Change position</string>
+    <string name="lblGetNotification">Notification</string>
+    <string name="lbPolicy">Policy</string>
+    <string name="lbTerm">Term</string>
+    <string name="lbReportViolation">Report</string>
+    <string name="lblExit">Logout</string>
+    <string name="lbTranslation">Language</string>
+    <string name="msgConfirmLogout">Do you want to sign out?</string>
+
+    <string name="google_client_id">150220538570-ri9h59obm0e4tovgghou85i6n3rus6hg.apps.googleusercontent.com</string>
+    <string name="facebook_app_id">584926965803734</string>
+    <string name="fb_login_protocol_scheme">fb584926965803734</string>
+    <string name="lblHintContentIntroduce">Content Introduce</string>
+    <string name="lblAddPlace">Add Place</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="lblSaveCache">Save Cache</string>
+    <string name="lblPushPost">Post</string>
+    <string name="lblOver">Over</string>
+    <string name="lblYes">Yes</string>
+    <string name="lblNo">No</string>
+    <string name="default_notification_channel_id">OutDoor</string>
+    <string name="lblSkip">SKIP</string>
+    <string name="msgNotificationTurnOn">Please change notification settings in terminal settings</string>
+    <string name="lblNavSetting">Setting</string>
+    <string name="lblDeny">Skip</string>
+    <string name="titleConfirm">Confirm</string>
+    <string name="msgConfirmExitPost">Do you want to save the post before exiting?</string>
+    <string name="lbClose">Close</string>
+    <string name="lbOke_dialog_exit">OK</string>
+
+    <string name="msgConfirmResetPost">Do you want to continue editing the post?</string>
+    <string name="msgConfirmGoToScreenMain">Do you want to go back to the main screen?</string>
+    <string name="msgConfirmChangeLocation">Do you want to change your current location?</string>
+    <string name="msgConfirmChangeUtensils">Do you want to change the current utensils?</string>
+    <string name="msgConfirmChangeAvatar">Bạn có muốn thay đổi avatar hiện tại không?</string>
+    <string name="msgConfirmExit">Do you want to exit?</string>
+    <string name="msgConfirmExitAvatar">Avatar profile picture is required\nDo you want to cancel the post?</string>
+
+    <string name="msgConfirmDeletePost">Do you want to delete the post?</string>
+
+    <string name="no_internet_connection">Your device is losing connection or cannot access the internet. Please check again.</string>
+    <string name="str_no_internet_retry">Retry</string>
+    <string name="msgConfirmExitUnbook">Do you want to cancel your saved posts?</string>
+
+    <string name="str_title_frm_report">Content reports</string>
+    <string name="str_header_frm_report">Help us the problem. What is going on with this Outdoor?</string>
+    <string name="str_content1_frm_report">I am not interested in the post</string>
+    <string name="str_content2_frm_report">Questionable or unhelpful post content</string>
+    <string name="str_content3_frm_report">Contains photos or videos with sensitive content</string>
+    <string name="str_content4_frm_report">Content is not good or harmful to the reader</string>
+    <string name="str_content5_frm_report">The content of the article is about self-harm or suicide</string>
+    <string name="str_lear_more_frm_report"><font color='#C120B6FA'>Learn more</font> about reporting violations of our rules</string>
+
+    <string name="str_like_count"> Likes</string>
+    <string name="str_comment_count"> Comments</string>
+    <string name="str_share_count"> Shares</string>
+    <string name="lblSeeMore">See more</string>
+    <string name="lblSeeMoreComment">See more comments</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_frm_detail_comment">Comment</string>
+    <string name="str_frm_detail_share">Share</string>
+    <string name="str_frm_detail_like">Like</string>
+
+
+    <string name="str_day_item_news">day</string>
+    <string name="str_hours_item_news">hour</string>
+    <string name="str_minutes_item_news">minutes</string>
+    <string name="str_seconds_item_news">seconds</string>
+
+    <string name="str_delete_post">Delete post success!</string>
+    <string name="str_hide_post">Hide post success!</string>
+    <string name="str_report_post">Thanks for letting us know.\nIf we find that this account is violating the Outdoor Rules we will take action on it.</string>
+
+    <string name="str_hint_search_view">Search View</string>
+    <string name="str_save_post_success">You have successfully saved!</string>
+
+    <string name="str_no_memory_assess">No memory access!</string>
+    <string name="str_un_bookmark">Bookmark deleted success!</string>
+
+    <string name="str_follow">You followed</string>
+    <string name="str_un_follow">You unfollowed</string>
+
+
+    <string name="str_list">List</string>
+    <string name="str_choose_place">Choose place</string>
+
+
+    <string name="str_title_toolbar_listpostlocation">POST</string>
+
+    <string name="str_month1">January</string>
+    <string name="str_month2">February</string>
+    <string name="str_month3">March</string>
+    <string name="str_month4">April</string>
+    <string name="str_month5">May</string>
+    <string name="str_month6">June</string>
+    <string name="str_month7">July</string>
+    <string name="str_month8">August</string>
+    <string name="str_month9">September</string>
+    <string name="str_month10">October</string>
+    <string name="str_month11">November</string>
+    <string name="str_month12">December</string>
+
+    <string name="str_sharefb_success">You successfully shared the post!</string>
+    <string name="str_sharefb_error">You shared the failed post!</string>
+    <string name="lblDelete">Delete</string>
+    <string name="lblFollowers">Followers</string>
+    <string name="msgConfirmDeleteComment">Do you want to delete the comment?</string>
+    <string name="msgConfirmChooseImage">Please select a photo before posting?</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="str_popup_location">Location</string>
+    <string name="str_popup_utensils">Utensils</string>
+    <string name="str_hint_described">Described</string>
+    <string name="lblSending">Sending…</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+
+    <string name="str_title_toolbar_select_image">Select image</string>
+
+    <string name="msgPostNoLongerExists">No data.</string>
+    <string name="titlePostNoLongerExists">Error</string>
+
+    //notification
+    <string name="str_title_toolbar_notification">NOTIFICATION</string>
+    <string name="str_notification_comment"><font color='#323131'>replied to your comment</font></string>
+    <string name="str_notification_follow"><font color='#323131'>followed you</font></string>
+    <string name="str_notification_new_post"><font color='#323131'>created a new post</font></string>
+
+    <string name="lblStartPolicy">By continuing you agree to out</string>
+    <string name="lblTOS">TOS</string>
+    <string name="lblAnd">and</string>
+    <string name="str_hint_name_location">Name of location</string>
+    <string name="lblAgree">Ok</string>
+    <string name="msgDeleteComment">Delete comment</string>
+    <string name="msgDeletePost">Delete post</string>
+
+    <string name="str_language_vietnam">Vietnamese</string>
+    <string name="str_language_english">English</string>
+
+    //title frmListPeopleInteractive
+    <string name="str_title_frmListPeople_follow">FOLLOWING</string>
+    <string name="str_title_frmListPeople_followers">FOLLOWERS</string>
+    <string name="str_tile_frmListPeople_likes">LIKES</string>
+
+    <string name="str_tvSuggest">Is name of location incorrect? Please correct.</string>
+    <string name="str_close">Close</string>
+
+    <string name="message_no_permissions">The app cannot work without permissions</string>
+    <string name="label_ok">OK</string>
+
+
+    <string name="message_push_post_error">The article exceeds the amount of Media allowed.</string>
+    <string name="lblEditSuccess">Edited post successfully!</string>
+    <string name="lblPostSuccess">Post successful!</string>
+
+    // dialog
+    <string name="str_close_dialog_notify">Close</string>
+
+</resources>

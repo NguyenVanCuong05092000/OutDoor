@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="brite.outdoor.data.entities.ObjectSearch" />
+
+        <variable
+            name="mSettingViewModel"
+            type="brite.outdoor.viewmodel.SearchViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.FrmSearch">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clTopNav"
+            android:elevation="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glEndTopNavButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.990213" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glTopOfTopNavButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.320875" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/glTopOfTopNavTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.375" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTopNavTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lblTitleSearch"
+                android:textAllCaps="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/glTopOfTopNavTitle" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EEEEEE"
+            app:layout_constraintTop_toBottomOf="@+id/clTopNav">
+
+            <brite.outdoor.ui.widgets.CustomImageButton
+                android:id="@+id/btnSearchLocate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> mSettingViewModel.setSearchType(ObjectSearch.ResultSearchEntity.LOCATE)}"
+                android:setSelectedImageView="@{mSettingViewModel.isSelectedSearLocate()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSearchTool"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_search_locate" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnSearchTool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> mSettingViewModel.setSearchType(ObjectSearch.ResultSearchEntity.TOOL)}"
+                android:setSelectedImageView="@{mSettingViewModel.isSelectedSearTool()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnSearchUser"
+                app:layout_constraintStart_toEndOf="@+id/btnSearchLocate"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_search_tool" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btnSearchUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="@{() -> mSettingViewModel.setSearchType(ObjectSearch.ResultSearchEntity.USER)}"
+                android:setSelectedImageView="@{mSettingViewModel.isSelectedSearUser()}"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnSearchTool"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/bg_search_user" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glStartFindBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.096" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glEndFindBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.904" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clButtonContainer">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <include
+            android:id="@+id/naviBottomHome"
+            layout="@layout/layout_bottom_navigation_home"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

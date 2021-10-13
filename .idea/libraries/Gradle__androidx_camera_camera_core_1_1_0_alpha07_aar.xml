@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.camera:camera-core:1.1.0-alpha07@aar">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/0811d8d495850b9d6a3f092381dac040/jetified-camera-core-1.1.0-alpha07/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/0811d8d495850b9d6a3f092381dac040/jetified-camera-core-1.1.0-alpha07/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/0811d8d495850b9d6a3f092381dac040/jetified-camera-core-1.1.0-alpha07/res" />
+      <root url="file://$PROJECT_DIR$/../../kojimachi/gradle/caches/transforms-2/files-2.1/0811d8d495850b9d6a3f092381dac040/jetified-camera-core-1.1.0-alpha07/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../kojimachi/gradle/caches/modules-2/files-2.1/androidx.camera/camera-core/1.1.0-alpha07/12dc7facfb6b2f09c47fc3b801f7f7d50a6ffe0b/camera-core-1.1.0-alpha07-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
